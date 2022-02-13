@@ -38,6 +38,8 @@ export const TransactionProvider = ({ children }) => {
     }
   }
 
+
+
   const sendTransaction = async () => {
     try {
       if (!ethereum) return alert('Please install metamask')
