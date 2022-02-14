@@ -25,7 +25,7 @@ export const TransactionProvider = ({ children }) => {
 
   const getAllTransactions = async () => {
     try {
-      if (!ethereum) return alert('Please install metamask')
+      if (!ethereum) return alert('Please install the metamask browser extension')
       const transactionContract = getEthereumContract();
       const availableTransactions = await transactionContract.getAllTransactions();
       const structuredTransactions = availableTransactions.map((transaction) => ({
@@ -45,13 +45,13 @@ export const TransactionProvider = ({ children }) => {
   }
 
   const checkIfWalletIsConnected = async () => {
-    if (!ethereum) return alert('Please install metamask')
+    if (!ethereum) return alert('Please install the metamask browser extension')
     const accounts = await ethereum.request({ method: 'eth_accounts' });
   }
 
   const connectWallet = async () => {
     try {
-      if (!ethereum) return alert('Please install metamask')
+      if (!ethereum) return alert('Please install the metamask browser extension')
       const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
       setCurrentAccount(accounts[0]);
       getAllTransactions();
@@ -75,7 +75,7 @@ export const TransactionProvider = ({ children }) => {
 
   const sendTransaction = async () => {
     try {
-      if (!ethereum) return alert('Please install metamask')
+      if (!ethereum) return alert('Please install the metamask browser extension')
 
       const { addressTo, amount, keyword, message } = formData;
       const transactionContract = getEthereumContract();
