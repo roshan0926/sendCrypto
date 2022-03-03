@@ -5,6 +5,8 @@
 This web app was created using Solidity in tie with Metamask along with hardhat for the smart contract.
 The front end was created using react with tailwind css for styling.
 
+This website is deployed and can be viewed at https://sendyour-crypto.com/
+
 ### A preview:
 When first loading up the web app we are presented with the landing page.
 ![landing page](https://github.com/roshan0926/sendCrypto/blob/main/readme_img/landing%20page.png?raw=true)

@@ -1,5 +1,6 @@
 {
   "name": "client",
+  "homepage": "https://sendyour-crypto.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
